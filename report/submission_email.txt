@@ -17,7 +17,7 @@ Please find attached my final project submission for Computer Vision: Image Clas
 - Report:   report.pdf (2 pages)
 
 Dataset (Kaggle): https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset
-GitHub repository: https://github.com/yashwanth-crypto/cats-vs-dogs-classifie
+GitHub repository: https://github.com/yashwanth-crypto/cats-vs-dogs-classifier
 
 Summary: I compared a CNN trained from scratch, a regularized CNN (BatchNorm, Dropout,
 augmentation) and MobileNetV2 transfer learning. On a held-out test set of 3,715 images,

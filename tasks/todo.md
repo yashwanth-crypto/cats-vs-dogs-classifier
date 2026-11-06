@@ -10,7 +10,7 @@ See `tasks/plan.md` for decisions, the dependency graph, and risks.
 ---
 
 ## Progress log
-- 2026-11-06 (final): T16 done. Pushed to https://github.com/yashwanth-crypto/cats-vs-dogs-classifie as a single commit authored only by the user (no co-author trailers). Notebook is 1.0 MB, email draft is in `report/submission_email.txt`. **Left for the user:** send the email, and optionally try the app with their own photos.
+- 2026-11-06 (final): T16 done. Pushed to https://github.com/yashwanth-crypto/cats-vs-dogs-classifier (repo recreated so no co-authored commit was ever pushed there) authored only by the user (no co-author trailers). Notebook is 1.0 MB, email draft is in `report/submission_email.txt`. **Left for the user:** send the email, and optionally try the app with their own photos.
 - 2026-11-06 (later): T12-T15 done. README with app screenshots; `report/report.pdf` is 2 pages and built by `report/make_report.py` from the saved results. App has a "try an example" picker. Still to do: T16 (push, notebook size, email draft), plus a real-photo app check and a fresh-clone check.
 - 2026-11-06: Tasks 1-11 done. **Test set:** baseline 84.6%, improved CNN 85.7%, MobileNetV2 98.9% accuracy (see `reports/comparison_table.md`). The improved CNN needed 3 runs (diagnosis in plan.md). Models were stripped of optimizer state (17/17/9.6 MB) with identical test metrics. Tasks 12-13 are built and checked (guard catches wallpapers that both models call "dog" at 87-92%, and an app upload works end to end). Still to do: a real-photo upload check in the app, then T14-T16.
 

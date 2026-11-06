@@ -52,10 +52,10 @@ from pathlib import Path
 
 IN_COLAB = "google.colab" in sys.modules
 # Public GitHub repo, used only on Colab to fetch the code.
-REPO_URL = "https://github.com/yashwanth-crypto/cats-vs-dogs-classifie.git"
+REPO_URL = "https://github.com/yashwanth-crypto/cats-vs-dogs-classifier.git"
 
 if IN_COLAB:
-    ROOT = Path("/content/cats-vs-dogs-classifie")
+    ROOT = Path("/content/cats-vs-dogs-classifier")
     if not ROOT.exists():
         subprocess.run(["git", "clone", "-q", REPO_URL, str(ROOT)], check=True)
     os.chdir(ROOT)
