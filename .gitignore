@@ -1,0 +1,19 @@
+# Environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data (Microsoft PetImages, downloaded separately)
+data/*
+!data/.gitkeep
+!data/splits/
+
+# Large / temporary model artifacts
+models/smoke_*
+*.h5
+*.zip
+logs/
+models/failed_runs/
+.claude/

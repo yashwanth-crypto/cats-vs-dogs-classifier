@@ -1,0 +1,30 @@
+{
+ "name": "mobilenetv2",
+ "img_size": 160,
+ "class_names": [
+  "cat",
+  "dog"
+ ],
+ "params": 2259265,
+ "trainable_params": 1512001,
+ "train_seconds": 1424.0,
+ "epochs_run": 17,
+ "best_epoch": 15,
+ "best_val_loss": 0.03353092074394226,
+ "best_val_accuracy": 0.9892328381538391,
+ "gradcam_layer": "out_relu",
+ "tensorflow": "2.21.0",
+ "keras": "3.15.1",
+ "keras_backend": "torch",
+ "reference": {
+  "image": "Cat/10001.jpg",
+  "p_dog": 9.695791902686324e-08
+ },
+ "augmentation": true,
+ "batch_size": 32,
+ "fine_tune_from_epoch": 8,
+ "fine_tune_n_layers": 30,
+ "fine_tune_learning_rate": 1e-05,
+ "fine_tune_extra_epochs": 10,
+ "fine_tune_patience": 4
+}

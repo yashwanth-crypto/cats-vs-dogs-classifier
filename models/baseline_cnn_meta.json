@@ -1,0 +1,23 @@
+{
+ "name": "baseline_cnn",
+ "img_size": 128,
+ "class_names": [
+  "cat",
+  "dog"
+ ],
+ "params": 4287809,
+ "train_seconds": 1413.7,
+ "epochs_run": 10,
+ "best_epoch": 5,
+ "best_val_loss": 0.35094937682151794,
+ "best_val_accuracy": 0.851951539516449,
+ "gradcam_layer": "relu3",
+ "tensorflow": "2.21.0",
+ "keras": "3.15.1",
+ "reference": {
+  "image": "Cat/10001.jpg",
+  "p_dog": 0.16928383708000183
+ },
+ "augmentation": false,
+ "batch_size": 32
+}

@@ -1,0 +1,30 @@
+DRAFT: send this yourself from the email address you use for your LMS login.
+
+To:      <your instructor / submission address>
+Subject: Final Project Submission – Yashwanth – Computer Vision Image Classification
+
+Attachments (about 3.3 MB total):
+  1. image_classification.ipynb   (notebooks/image_classification.ipynb, about 1.0 MB, executed with outputs)
+  2. report.pdf                   (report/report.pdf, about 2.2 MB, 2 pages)
+
+------------------------------------------------------------------------------------------
+Dear <Instructor name>,
+
+Please find attached my final project submission for Computer Vision: Image Classification
+(Cats vs Dogs).
+
+- Notebook: image_classification.ipynb (executed top to bottom, with all outputs)
+- Report:   report.pdf (2 pages)
+
+Dataset (Kaggle): https://www.kaggle.com/datasets/shaunthesheep/microsoft-catsvsdogs-dataset
+GitHub repository: https://github.com/yashwanth-crypto/cats-vs-dogs-classifie
+
+Summary: I compared a CNN trained from scratch, a regularized CNN (BatchNorm, Dropout,
+augmentation) and MobileNetV2 transfer learning. On a held-out test set of 3,715 images,
+MobileNetV2 reached 98.9% accuracy (ROC-AUC 0.999), compared with 84.6% for the baseline and
+85.7% for the improved CNN. Grad-CAM shows that MobileNetV2 focuses on the animal, while the
+scratch CNNs often rely on background cues. The repository also includes a Streamlit app that
+classifies uploaded photos, shows a Grad-CAM heatmap, and warns when an image isn't a cat or a dog.
+
+Kind regards,
+Yashwanth

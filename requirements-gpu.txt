@@ -1,0 +1,6 @@
+# Optional: GPU training on native Windows (TensorFlow has no Windows GPU support after 2.10).
+# Keras trains on PyTorch + CUDA instead; saved .keras files load normally under TensorFlow.
+#   .venv/Scripts/python -m pip install -r requirements-gpu.txt
+#   KERAS_BACKEND=torch .venv/Scripts/python -m src.experiments improved_cnn
+--index-url https://download.pytorch.org/whl/cu130
+torch==2.14.1
