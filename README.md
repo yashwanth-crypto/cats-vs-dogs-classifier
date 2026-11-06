@@ -5,6 +5,8 @@ regularized CNN, and **MobileNetV2 transfer learning**. They're compared on a he
 predictions are explained with **Grad-CAM**, and the best model is served in a **Streamlit app** that
 also flags photos that aren't cats or dogs at all.
 
+**▶ Live demo: [https://cats-vs-dogs-classifier-yashwanth.streamlit.app](https://cats-vs-dogs-classifier-yashwanth.streamlit.app)**: upload a photo or pick an example. A sleeping app takes about a minute to wake up.
+
 | | |
 |---|---|
 | ![App: dog prediction with Grad-CAM](reports/figures/app_dog.png) | ![App: non-pet flagged by the ImageNet guard](reports/figures/app_not_a_pet.png) |
@@ -49,6 +51,7 @@ Common to all: binary cross-entropy, EarlyStopping, ModelCheckpoint and ReduceLR
 The improved CNN took three runs. The first version underfit, because BatchNorm-scaled features blew up the Dense layer and the learning-rate scheduler cut the rate too early. The diagnosis is in the notebook (§2.2) and in [`tasks/plan.md`](tasks/plan.md).
 
 ## The app
+Live at **[https://cats-vs-dogs-classifier-yashwanth.streamlit.app](https://cats-vs-dogs-classifier-yashwanth.streamlit.app)** (Streamlit Community Cloud, Python 3.11, uses [`app/requirements.txt`](app/requirements.txt)).
 - Upload a JPG/PNG or pick an example. The app shows the predicted label with a confidence bar and the Grad-CAM overlay.
 - Sidebar: choose a model (MobileNetV2 or improved CNN), toggle Grad-CAM, and toggle the **"is it a cat or dog?" guard**.
 - **Why a guard?** A binary classifier must answer *cat* or *dog*, even for a car. On Windows wallpapers (a taxi, a knot, bubbles) both models gave confident cat/dog answers (61–92%). The guard runs a stock ImageNet MobileNetV2 first. If none of its top-5 guesses is one of ImageNet's 118 dog breeds or 5 cat classes, the app says so.
