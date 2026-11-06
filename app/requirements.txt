@@ -1,0 +1,10 @@
+# Minimal dependencies for running the Streamlit app (used by Streamlit Community Cloud,
+# which reads requirements.txt next to the app file first). Python 3.11.
+# Training, notebook and test tools are in the root requirements.txt.
+tensorflow==2.21.0  # same version the models were saved with; CPU-only on Streamlit Cloud
+keras==3.15.1
+numpy==2.4.6
+pandas==3.1.1
+Pillow==13.0.0
+matplotlib==3.11.2
+streamlit==1.67.0
