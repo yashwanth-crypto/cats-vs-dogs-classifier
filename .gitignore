@@ -17,3 +17,4 @@ models/smoke_*
 logs/
 models/failed_runs/
 .claude/
+submission/
