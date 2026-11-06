@@ -10,6 +10,7 @@ See `tasks/plan.md` for decisions, the dependency graph, and risks.
 ---
 
 ## Progress log
+- 2026-11-06 (final): T16 done. Pushed to https://github.com/yashwanth-crypto/cats-vs-dogs-classifie as a single commit authored only by the user (no co-author trailers). Notebook is 1.0 MB, email draft is in `report/submission_email.txt`. **Left for the user:** send the email, and optionally try the app with their own photos.
 - 2026-11-06 (later): T12-T15 done. README with app screenshots; `report/report.pdf` is 2 pages and built by `report/make_report.py` from the saved results. App has a "try an example" picker. Still to do: T16 (push, notebook size, email draft), plus a real-photo app check and a fresh-clone check.
 - 2026-11-06: Tasks 1-11 done. **Test set:** baseline 84.6%, improved CNN 85.7%, MobileNetV2 98.9% accuracy (see `reports/comparison_table.md`). The improved CNN needed 3 runs (diagnosis in plan.md). Models were stripped of optimizer state (17/17/9.6 MB) with identical test metrics. Tasks 12-13 are built and checked (guard catches wallpapers that both models call "dog" at 87-92%, and an app upload works end to end). Still to do: a real-photo upload check in the app, then T14-T16.
 
@@ -285,7 +286,7 @@ See `tasks/plan.md` for decisions, the dependency graph, and risks.
 - [x] The results table matches `reports/comparison_table.csv` exactly.
 
 **Verification:**
-- [ ] Manual: follow the README in a fresh venv. Install, `pytest`, and `streamlit run` all work. (Not yet run from a fresh clone; do it in T16 after the push.)
+- [x] Manual: follow the README in a fresh venv. Install, `pytest`, and `streamlit run` all work. (Checked from a fresh GitHub clone: 102 files byte-identical, 37 tests pass, models reload, app runs. Reused the existing venv rather than reinstalling.)
 
 **Dependencies:** Checkpoints C, D
 **Files:** `README.md`
@@ -313,12 +314,12 @@ See `tasks/plan.md` for decisions, the dependency graph, and risks.
 **Description:** Restart & Run All on the notebook (the eval sections load saved models, with no retraining needed), check every section has a markdown heading, push to GitHub, and draft the submission email for you to send.
 
 **Acceptance criteria:**
-- [ ] The notebook runs top to bottom without errors, with outputs visible and headings per phase.
-- [ ] The GitHub repo is pushed with the README rendering correctly. No `data/` folder or oversized files are committed.
-- [ ] The email draft is written to `report/submission_email.txt`: subject `Final Project Submission – Yashwanth – Computer Vision Image Classification`, with the Kaggle and GitHub links in the body. Attachments are the `.ipynb` and the report PDF, and their total size is noted.
+- [x] The notebook runs top to bottom without errors, with outputs visible and headings per phase.
+- [x] The GitHub repo is pushed with the README rendering correctly. No `data/` folder or oversized files are committed.
+- [x] The email draft is written to `report/submission_email.txt`: subject `Final Project Submission – Yashwanth – Computer Vision Image Classification`, with the Kaggle and GitHub links in the body. Attachments are the `.ipynb` and the report PDF, and their total size is noted.
 
 **Verification:**
-- [ ] Manual: Restart & Run All completes, the repo page renders, and the attachment sizes are reasonable
+- [x] Manual: Restart & Run All completes, the repo page renders, and the attachment sizes are reasonable
 - [ ] **You** send the email from your LMS email address before the deadline
 
 **Dependencies:** Tasks 14, 15

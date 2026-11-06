@@ -89,7 +89,7 @@ T1 env + skeleton
 ### Phase 5: Write-up and submission
 - [x] Task 14: README with setup, results table, screenshots
 - [x] Task 15: 2-3 page report PDF
-- [ ] Task 16: Clean notebook run and submission package
+- [x] Task 16: Clean notebook run and submission package
 
 ### Checkpoint: Final
 
